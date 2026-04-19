@@ -116,15 +116,7 @@ p  { color: var(--text-muted); max-width: 68ch; }
   background: transparent;
   transition: background var(--transition), box-shadow var(--transition), padding var(--transition);
 }
-.navbar.scrolled {
-  background: rgba(15,23,42,.92);
-  backdrop-filter: blur(12px);
-  box-shadow: 0 1px 0 var(--border);
-  padding: .7rem 2rem;
-}
-body.light-mode .navbar.scrolled {
-  background: rgba(241,245,249,.92);
-}
+
 
 .nav-brand {
   font-family: 'Orbitron', sans-serif;
