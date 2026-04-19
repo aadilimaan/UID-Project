@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GPU Arena — AMD vs NVIDIA</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body class="dark-mode">
+
+  <!-- ─── NAVBAR ─────────────────────────────────────────── -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-brand">
+      <span class="brand-amd">GPU</span><span class="brand-nvidia">Arena</span>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#hero"       class="nav-link active">Home</a></li>
+      <li><a href="#about"      class="nav-link">About GPU</a></li>
+      <li><a href="#amd"        class="nav-link">AMD</a></li>
+      <li><a href="#nvidia"     class="nav-link">NVIDIA</a></li>
+      <li><a href="#comparison" class="nav-link">Comparison</a></li>
+      <li><a href="#contact"    class="nav-link">Contact</a></li>
+    </ul>
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+      <i class="fas fa-sun"  id="sunIcon"></i>
+      <i class="fas fa-moon" id="moonIcon" style="display:none"></i>
+    </button>
+  </nav>
+
+  <!-- ─── HERO ───────────────────────────────────────────── -->
+  <section class="hero" id="hero">
+      <poster="1.jpg">
+      <div class="hero-overlay"></div>
+    <div class="hero-content fade-in">
+      <h1 class="hero-title">
+        <span class="amd-text">AMD</span>
+        <span class="vs-text">VS</span>
+        <span class="nvidia-text">NVIDIA</span>
+      </h1>
+      <p class="hero-sub">Choosing the right GPU shapes every pixel you see.<br/>Let's break it down — specs, value, and everything in between.</p>
+      <div class="hero-buttons">
+        <a href="#comparison" class="btn btn-amd">View Comparison</a>
+        <a href="#about"      class="btn btn-outline">Learn More</a>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ─── ABOUT GPU ──────────────────────────────────────── -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-tag">Fundamentals</span>
+        <h2>What is a <span class="highlight-amd">GPU</span>?</h2>
+        <p>The Graphics Processing Unit: the engine behind every beautiful frame.</p>
+      </div>
+
+      <div class="about-grid fade-in">
+        <div class="about-text">
+          <p>A <strong>GPU (Graphics Processing Unit)</strong> is a specialised processor designed to handle thousands of parallel computations simultaneously — making it indispensable for anything visual.</p>
+          <p>Think of your PC like a person braving winter:</p>
+          <blockquote class="analogy">
+            <span class="analogy-icon">🧥</span>
+            <div>
+              <strong>CPU = Your body</strong> — handles thinking and decisions.<br/>
+              <strong>GPU = Your coat</strong> — handles the heavy lifting of visual work.<br/>
+              A better GPU means smoother, richer graphics performance.
+            </div>
+          </blockquote>
+        </div>
+        <div class="about-cards">
+          <div class="use-card" style="--accent:#ef4444">
+            <i class="fas fa-gamepad"></i>
+            <h4>Gaming</h4>
+            <p>Renders complex 3D scenes at high frame rates for immersive gameplay.</p>
+          </div>
+          <div class="use-card" style="--accent:#22c55e">
+            <i class="fas fa-brain"></i>
+            <h4>AI & ML</h4>
+            <p>Powers deep learning and neural networks with massive parallel compute.</p>
+          </div>
+          <div class="use-card" style="--accent:#3b82f6">
+            <i class="fas fa-film"></i>
+            <h4>Video Editing</h4>
+            <p>Accelerates encoding, colour grading, and real-time 4K/8K preview.</p>
+          </div>
+          <div class="use-card" style="--accent:#a855f7">
+            <i class="fas fa-cube"></i>
+            <h4>3D & VR</h4>
+            <p>Drives real-time rendering for architecture, product design, and VR.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── AMD SECTION ────────────────────────────────────── -->
+  <section class="section section-amd" id="amd">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-tag tag-amd">Team Red</span>
+        <h2><span class="amd-text">AMD</span> Radeon GPUs</h2>
+        <p>Performance-first, open by design, priced for everyone.</p>
+      </div>
+
+      <div class="brand-layout fade-in">
+        <!-- Feature list -->
+        <div class="brand-features">
+          <div class="feature-item">
+            <div class="feature-icon amd-bg"><i class="fas fa-tag"></i></div>
+            <div>
+              <h4>Competitive Pricing</h4>
+              <p>Best-in-class performance-per-dollar across mainstream and enthusiast tiers.</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon amd-bg"><i class="fas fa-lock-open"></i></div>
+            <div>
+              <h4>Open Technologies</h4>
+              <p>ROCm open GPU compute stack, FreeSync (royalty-free), and open-source drivers.</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon amd-bg"><i class="fas fa-memory"></i></div>
+            <div>
+              <h4>Generous VRAM</h4>
+              <p>More video memory at each price point — critical for modern games and AI workloads.</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon amd-bg"><i class="fas fa-magic"></i></div>
+            <div>
+              <h4>FSR Upscaling</h4>
+              <p>FidelityFX Super Resolution works on any GPU, boosting frame rates without major quality loss.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- GPU Cards -->
+        <div class="gpu-cards">
+          <div class="gpu-card amd-card flip-card">
+            <div class="flip-inner">
+              <div class="flip-front">
+                <img src="rx6600.jpg" alt="AMD RX 6600"/>
+                <div class="gpu-card-label">RX 6600</div>
+              </div>
+              <div class="flip-back amd-back">
+                <h3>RX 6600</h3>
+                <ul>
+                  <li>8 GB GDDR6 VRAM</li>
+                  <li>1792 Stream Processors</li>
+                  <li>132W TBP</li>
+                  <li>1080p Champion</li>
+                  <li>Rs.50,000 MSRP</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="gpu-card amd-card flip-card">
+            <div class="flip-inner">
+              <div class="flip-front">
+                <img src="rx7900rt.jpg" alt="AMD RX 7900 XT"/>
+                <div class="gpu-card-label">RX 7900 XT</div>
+              </div>
+              <div class="flip-back amd-back">
+                <h3>RX 7900 XT</h3>
+                <ul>
+                  <li>20 GB GDDR6 VRAM</li>
+                  <li>5376 Stream Processors</li>
+                  <li>315W TBP</li>
+                  <li>4K Powerhouse</li>
+                  <li>Rs.1,75,000 MSRP</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── NVIDIA SECTION ─────────────────────────────────── -->
+  <section class="section section-nvidia" id="nvidia">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-tag tag-nvidia">Team Green</span>
+        <h2><span class="nvidia-text">NVIDIA</span> GeForce GPUs</h2>
+        <p>Pushing the boundary of realism with AI-powered graphics.</p>
+      </div>
+
+      <div class="brand-layout brand-layout-reverse fade-in">
+        <!-- GPU Cards -->
+        <div class="gpu-cards">
+          <div class="gpu-card nvidia-card flip-card">
+            <div class="flip-inner">
+              <div class="flip-front">
+                <img src="3060.png" alt="NVIDIA RTX 3060"/>
+                <div class="gpu-card-label">RTX 3060</div>
+              </div>
+              <div class="flip-back nvidia-back">
+                <h3>RTX 3060</h3>
+                <ul>
+                  <li>12 GB GDDR6 VRAM</li>
+                  <li>3584 CUDA Cores</li>
+                  <li>170W TDP</li>
+                  <li>Ray Tracing + DLSS 2</li>
+                  <li>30,000 MSRP</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="gpu-card nvidia-card flip-card">
+            <div class="flip-inner">
+              <div class="flip-front">
+                <img src="4090.jpg" alt="NVIDIA RTX 4090"/>
+                <div class="gpu-card-label">RTX 4090</div>
+              </div>
+              <div class="flip-back nvidia-back">
+                <h3>RTX 4090</h3>
+                <ul>
+                  <li>24 GB GDDR6X VRAM</li>
+                  <li>16384 CUDA Cores</li>
+                  <li>450W TDP</li>
+                  <li>DLSS 3 Frame Gen</li>
+                  <li>1,80,000 MSRP</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Feature list -->
+        <div class="brand-features">
+          <div class="feature-item">
+            <div class="feature-icon nvidia-bg"><i class="fas fa-bolt"></i></div>
+            <div>
+              <h4>Peak Performance</h4>
+              <p>Consistently leads benchmarks in rasterisation and compute workloads.</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon nvidia-bg"><i class="fas fa-sun"></i></div>
+            <div>
+              <h4>Ray Tracing</h4>
+              <p>Dedicated RT Cores for real-time global illumination, shadows, and reflections.</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon nvidia-bg"><i class="fas fa-robot"></i></div>
+            <div>
+              <h4>DLSS AI Upscaling</h4>
+              <p>Tensor Core-powered super-sampling — frame gen in DLSS 3 nearly doubles FPS.</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon nvidia-bg"><i class="fas fa-layer-group"></i></div>
+            <div>
+              <h4>CUDA Ecosystem</h4>
+              <p>Unrivalled software ecosystem for AI research, scientific computing, and creative tools.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── COMPARISON TABLE ───────────────────────────────── -->
+  <section class="section" id="comparison">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-tag">Head-to-Head</span>
+        <h2>AMD <span class="vs-text">vs</span> NVIDIA</h2>
+      </div>
+
+      <div class="table-wrapper fade-in">
+        <table class="comparison-table">
+          <thead>
+            <tr>
+              <th>Category</th>
+              <th class="amd-col"><i class="fas fa-circle amd-dot"></i> AMD Radeon</th>
+              <th class="nvidia-col"><i class="fas fa-circle nvidia-dot"></i> NVIDIA GeForce</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="cat-cell"><i class="fas fa-tag"></i> Price Range</td>
+              <td class="amd-win">Rs.15,000 - Rs.1,50,000 <span class="badge amd-badge">Better Value</span></td>
+              <td>Rs.50,000 – Rs.2,00,000+</td>
+            </tr>
+            <tr>
+              <td class="cat-cell"><i class="fas fa-tachometer-alt"></i> 1080p Gaming</td>
+              <td class="amd-win">Excellent <span class="badge amd-badge">✓</span></td>
+              <td>Excellent</td>
+            </tr>
+            <tr>
+              <td class="cat-cell"><i class="fas fa-desktop"></i> 4K Gaming</td>
+              <td>Very Good</td>
+              <td class="nvidia-win">Best-in-Class <span class="badge nvidia-badge">✓</span></td>
+            </tr>
+            <tr>
+              <td class="cat-cell"><i class="fas fa-sun"></i> Ray Tracing</td>
+              <td>Good</td>
+              <td class="nvidia-win">Superior <span class="badge nvidia-badge">✓</span></td>
+            </tr>
+            <tr>
+              <td class="cat-cell"><i class="fas fa-magic"></i> AI Upscaling</td>
+              <td>FSR (any GPU)</td>
+              <td class="nvidia-win">DLSS 3 + Frame Gen <span class="badge nvidia-badge">✓</span></td>
+            </tr>
+            <tr>
+              <td class="cat-cell"><i class="fas fa-memory"></i> VRAM (mid-range)</td>
+              <td class="amd-win">12–16 GB <span class="badge amd-badge">✓</span></td>
+              <td>8–12 GB</td>
+            </tr>
+            <tr>
+              <td class="cat-cell"><i class="fas fa-plug"></i> Power Efficiency</td>
+              <td>Moderate</td>
+              <td class="nvidia-win">Ada Lovelace wins <span class="badge nvidia-badge">✓</span></td>
+            </tr>
+            <tr>
+              <td class="cat-cell"><i class="fas fa-code"></i> Open Source</td>
+              <td class="amd-win">ROCm / Open Drivers <span class="badge amd-badge">✓</span></td>
+              <td>Proprietary CUDA</td>
+            </tr>
+            <tr>
+              <td class="cat-cell"><i class="fas fa-brain"></i> AI / ML Compute</td>
+              <td>Growing</td>
+              <td class="nvidia-win">Industry Standard <span class="badge nvidia-badge">✓</span></td>
+            </tr>
+            <tr>
+              <td class="cat-cell"><i class="fas fa-sync"></i> Driver Stability</td>
+              <td>Improved</td>
+              <td class="nvidia-win">Generally Solid <span class="badge nvidia-badge">✓</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Score Cards -->
+      <div class="score-cards fade-in">
+        <div class="score-card amd-score">
+          <div class="score-brand">AMD</div>
+          <div class="score-num amd-text">4</div>
+          <div class="score-label">Category Wins</div>
+        </div>
+        <div class="score-vs">VS</div>
+        <div class="score-card nvidia-score">
+          <div class="score-brand">NVIDIA</div>
+          <div class="score-num nvidia-text">6</div>
+          <div class="score-label">Category Wins</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── CONTACT / FORM ─────────────────────────────────── -->
+  <section class="section section-form" id="contact">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-tag">Get in Touch</span>
+        <h2>Find Your Perfect <span class="highlight-nvidia">GPU</span></h2>
+        <p>Tell us your needs and we'll point you in the right direction.</p>
+      </div>
+
+      <div class="form-wrapper fade-in">
+        <form class="gpu-form" id="gpuForm" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" placeholder="Jane Smith" autocomplete="name"/>
+              <span class="field-error" id="nameError"></span>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="jane@example.com" autocomplete="email"/>
+              <span class="field-error" id="emailError"></span>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="gpu">Preferred GPU Brand</label>
+            <select id="gpu" name="gpu">
+              <option value="">— Select a brand —</option>
+              <option value="amd">🔴 AMD Radeon</option>
+              <option value="nvidia">🟢 NVIDIA GeForce</option>
+              <option value="unsure">🤔 Not sure yet</option>
+            </select>
+            <span class="field-error" id="gpuError"></span>
+          </div>
+          <div class="form-group">
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell us about your use case — gaming, AI, video editing..."></textarea>
+            <span class="field-error" id="messageError"></span>
+          </div>
+          <button type="submit" class="btn btn-submit" id="submitBtn">
+            <span>Send Message</span>
+            <i class="fas fa-paper-plane"></i>
+          </button>
+        </form>
+
+        <div class="success-message" id="successMsg">
+          <div class="success-icon"><i class="fas fa-check-circle"></i></div>
+          <h3>Message Sent!</h3>
+          <p>Thanks for reaching out. We'll help you pick the perfect GPU soon.</p>
+          <button class="btn btn-outline" onclick="resetForm()">Send Another</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FOOTER ─────────────────────────────────────────── -->
+  <footer class="footer">
+    <div class="footer-inner container">
+      <div class="footer-brand">
+        <div class="nav-brand footer-logo">
+          <span class="brand-amd">GPU</span><span class="brand-nvidia">Arena</span>
+        </div>
+        <p>Your ultimate guide to AMD vs NVIDIA GPU comparison. Built for gamers, creators, and tech enthusiasts.</p>
+      </div>
+
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About GPU</a></li>
+          <li><a href="#amd">AMD</a></li>
+          <li><a href="#nvidia">NVIDIA</a></li>
+          <li><a href="#comparison">Comparison</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-social">
+        <h4>Follow Us</h4>
+        <div class="social-icons">
+          <a href="#" class="social-icon" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+          <a href="#" class="social-icon" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          <a href="#" class="social-icon" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="#" class="social-icon" aria-label="Discord"><i class="fab fa-discord"></i></a>
+          <a href="#" class="social-icon" aria-label="Reddit"><i class="fab fa-reddit"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
